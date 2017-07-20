@@ -1,5 +1,7 @@
-The token/user is stored in your localstorage when authenticated
+[NodeJS SERVER]
+NodeJS localhost server is stored in the "server" directory in root pass of the app.
 
+The token/user are stored in the localstorage of your device when authenticated
 
 * clone project
 * Install NodeJs (localhost server) packages
