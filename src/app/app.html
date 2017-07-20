@@ -1,0 +1,23 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Ionic 3</ion-title>
+      <div *ngIf="user">Welcome {{user.username}}</div>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list *ngIf="user">
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        {{p.title}}
+      </button>
+    </ion-list>
+    <button menuClose ion-item *ngIf="!user"  (click)="openPage(pageLogin)">Signin</button>
+    <button menuClose ion-item *ngIf="user"  (click)="triggerLoggedOff()">Log off</button>
+
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

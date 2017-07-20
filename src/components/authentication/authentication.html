@@ -1,0 +1,27 @@
+<!-- Generated template for the AuthenticationComponent component -->
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Connection</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label fixed>Username</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="data.username"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="data.password"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+  <div padding>
+     <button ion-button color="primary" block (click)="signin()" [disabled]="!checkLoginDisable()">Signin</button>
+  </div>
+</ion-content>
