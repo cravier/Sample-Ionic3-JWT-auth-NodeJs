@@ -1,5 +1,5 @@
 [NodeJS SERVER]
-NodeJS localhost server is stored in the "server" directory in root pass of the app.
+NodeJS localhost server is stored in the "server" directory in root path of the app.
 
 The token/user are stored in the localstorage of your device when authenticated
 
