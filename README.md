@@ -1,3 +1,5 @@
+# DEPRECATED !!
+
 [NodeJS SERVER]
 NodeJS localhost server is stored in the "server" directory in root path of the app.
 
